@@ -35,7 +35,7 @@ function createEngine(db){
   }
   targets.forEach(t=>visit(t.item));order.reverse();
   const materialIds=new Set([...dependencies.values()].flat());
-  const pureTargets=new Set(targets.filter(t=>t.mode==='craft'&&!materialIds.has(t.item)).map(t=>t.item));
+  const pureTargets=new Set(targets.filter(t=>(t.mode==='craft'||t.mode==='completion')&&!materialIds.has(t.item)).map(t=>t.item));
   for(const t of targets){if(t.mode==='craft'&&pureTargets.has(t.item)){const r=recipes.get(t.recipe);minimum.set(r.id,Math.max(minimum.get(r.id)||0,Math.ceil(t.qty/r.yieldQty)));if(!mandatoryByItem.has(r.item))mandatoryByItem.set(r.item,[]);if(!mandatoryByItem.get(r.item).some(x=>x.id===r.id))mandatoryByItem.get(r.item).push(r);}}
   const demand=new Map(reserved),shares=[],incoming=new Map(),rows=[],crafts=[];
   for(const id of order){
