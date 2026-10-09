@@ -645,6 +645,6 @@ input[type=checkbox]:disabled{opacity:.5;cursor:default}
 #stock-items .stock-table{width:516px;min-width:516px}
 .sidebar{zoom:1.25}.main{margin-left:274.7px;width:calc(100% - 274.7px)}
 @media(min-width:651px) and (max-width:1200px){.main{margin-left:250.1px;width:calc(100% - 250.1px)}}
-@media(max-width:650px){.sidebar{width:80%}.main{margin-left:0;width:100%}#target-query{grid-template-columns:minmax(0,1fr) max-content max-content;gap:8px}#target-query .query-field{grid-column:1/-1}#target-results .search-row{grid-template-columns:minmax(0,1fr) max-content;gap:8px}}
+@media(max-width:650px){.sidebar{width:100%}.main{margin-left:0;width:100%}#target-query{grid-template-columns:minmax(0,1fr) max-content max-content;gap:8px}#target-query .query-field{grid-column:1/-1}#target-results .search-row{grid-template-columns:minmax(0,1fr) max-content;gap:8px}}
 
 #collection-list th:nth-child(-n+4){padding-left:3px;padding-right:3px}
