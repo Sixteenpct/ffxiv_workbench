@@ -669,3 +669,5 @@ input[type=checkbox]:disabled{opacity:.5;cursor:default}
 
 /* Checkpoint 14: each material summary immediately below its name. */
 .node-context>.node-head{margin-bottom:4px}.node-context>.use{margin:0}.node-uses{margin-top:12px;padding-left:24px}.node-uses:empty{display:none}
+
+.collection-completion{display:flex;align-items:center;gap:4px;margin:3px 0;font-size:10px;line-height:1.4}.collection-completion span{overflow-wrap:anywhere}.collection-partial{display:block;color:#366449;font-size:10px;margin-top:4px}
