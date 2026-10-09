@@ -627,3 +627,22 @@ table{table-layout:fixed}th,td{overflow-wrap:anywhere}#collection-list th select
 
 /* 左上品牌保留回首頁操作，呈現一般標題。 */
 .brand-title.brand-home,.brand-title.brand-home:hover{color:var(--ink);text-decoration:none}
+
+/* Checkpoint 11: consistent native checkbox interactions with sky borders. */
+input[type=checkbox]{appearance:none;-webkit-appearance:none;display:inline-grid;place-content:center;flex:none;border:1px solid #9fc4cd;border-radius:3px;background:#fff;padding:0;vertical-align:middle;cursor:pointer}
+input[type=checkbox]:checked{background:#3b9b98;border-color:#3b9b98}
+input[type=checkbox]:checked:after{content:'✓';font:bold 13px/1 sans-serif;color:white}
+input[type=checkbox]:focus-visible{outline:2px solid #77b8d4;outline-offset:2px}
+input[type=checkbox]:disabled{opacity:.5;cursor:default}
+#target-query{display:grid;grid-template-columns:295.2px max-content max-content;gap:12.3px;justify-content:start}
+#target-results:not(:empty){margin:18px 0 24px;max-height:240px;overflow:auto}
+#target-results .search-row{display:grid;grid-template-columns:295.2px max-content;gap:12.3px;justify-content:start;min-height:68px;padding:12px 0}
+#target-results .search-row>div{min-width:0;overflow-wrap:anywhere}
+#target-results button{justify-self:start}
+#collection-list th:first-child{min-width:0}
+#collection-list th:first-child select{min-width:0}
+#collection-list th select{padding:4px 2px;font-size:12px}
+#stock-items .stock-table{width:516px;min-width:516px}
+.sidebar{zoom:1.25}.main{margin-left:274.7px;width:calc(100% - 274.7px)}
+@media(min-width:651px) and (max-width:1200px){.main{margin-left:250.1px;width:calc(100% - 250.1px)}}
+@media(max-width:650px){.sidebar{width:80%}.main{margin-left:0;width:100%}#target-query{grid-template-columns:minmax(0,1fr) max-content max-content;gap:8px}#target-query .query-field{grid-column:1/-1}#target-results .search-row{grid-template-columns:minmax(0,1fr) max-content;gap:8px}}
