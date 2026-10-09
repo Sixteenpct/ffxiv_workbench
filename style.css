@@ -599,3 +599,31 @@ table{table-layout:fixed}th,td{overflow-wrap:anywhere}#collection-list th select
 @media(max-width:650px){#tab-home .home-link strong{font-size:17.94px}#tab-home .home-glyph{font-size:22.86px}}
 
 .route-toc summary{position:sticky;top:0;background:#f7fcfd;padding-bottom:6px;z-index:1}
+
+/* Checkpoint 10: lighter toast, fast TOC and fully expanded categorized tables. */
+.toast{top:clamp(110px,20vh,180px);bottom:auto;background:#fff5d7;color:#6d5729;border:1px solid #e7cf91;transition:opacity .2s;box-shadow:0 6px 24px #8c793b20}
+.target-card #targets .table-scroll{border:1px solid #c4dce3;border-radius:6px;isolation:isolate}
+.target-card #targets table{border-collapse:separate;border-spacing:0;border:0}
+.target-card #targets thead{position:sticky;top:0;z-index:3;background:#f0f8fa}
+.target-card #targets th{position:static;background:#f0f8fa;border-top:0;border-bottom:1px solid #c4dce3;box-shadow:inset 0 -1px #c4dce3}
+.target-card #targets th:first-child,.target-card #targets td:first-child{border-left:0}
+.target-card #targets th:last-child,.target-card #targets td:last-child{border-right:0}
+.expanded-list-card .table-scroll{height:auto;max-height:none;overflow:auto}
+.expanded-list-card th{position:static}
+.expanded-list-card input[type=number]{max-width:68px}
+#tab-home .home-link{position:relative;overflow:hidden;border-radius:18px;border:1px solid #cbe3ed;box-shadow:0 4px 14px #6a9cb212}
+#tab-home .home-link:nth-child(1){background:#eef9ff;border-color:#bddfea}
+#tab-home .home-link:nth-child(2){background:#edf9f1;border-color:#bfe2d2}
+#tab-home .home-link:nth-child(3){background:#fff5ec;border-color:#efd3bb}
+#tab-home .home-link:nth-child(4){background:#f5f0fd;border-color:#d8ccee}
+#tab-home .home-link:nth-child(5){background:#fff8e4;border-color:#eddfb1}
+#tab-home .home-link:nth-child(6){background:#edf8f8;border-color:#bfe0df}
+#tab-home .home-link:after{content:'✦';position:absolute;right:20px;top:8px;font-size:22px;color:#77a9ba;opacity:.22;pointer-events:none}
+#tab-home .home-link:nth-child(3):after,#tab-home .home-link:nth-child(5):after{color:#d7a666}
+#tab-home .home-link:nth-child(4):after{color:#af91ce}
+#tab-home .home-link:hover{box-shadow:0 6px 18px #6a9cb224;filter:brightness(1.01)}
+#tab-home .home-glyph{border-radius:14px;box-shadow:inset 0 0 0 1px #ffffffa0}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 左上品牌保留回首頁操作，呈現一般標題。 */
+.brand-title.brand-home,.brand-title.brand-home:hover{color:var(--ink);text-decoration:none}
