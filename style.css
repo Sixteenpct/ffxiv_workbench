@@ -656,3 +656,13 @@ input[type=checkbox]:disabled{opacity:.5;cursor:default}
 #scroll-bottom{background:#2985ab;border-color:#2985ab}#scroll-top{background:#408e80;border-color:#408e80}
 .breadcrumbs .brand-home{color:#147fa8;text-decoration:none;border-radius:4px;transition:color .15s,background .15s}
 .breadcrumbs .brand-home:hover{color:#075b83;background:#d7eff7;text-decoration:none}
+
+/* Checkpoint 13: bottom footer, narrower navigation and version chips. */
+.sidebar{width:208px}.main{margin-left:260px;width:calc(100% - 260px);min-height:100svh;display:flex;flex-direction:column;padding-bottom:0}
+.main>.page:not([hidden]){flex:1 0 auto}
+.foot{display:block;margin-top:auto;padding:18px 0;text-align:center;line-height:1.7;flex-shrink:0}
+.footer-credit,.footer-brand,.save-time{display:block}.footer-credit{font-weight:650}.save-time{margin-top:4px}
+.scroll-tools button{text-align:right}
+.stock-search-row{grid-template-columns:minmax(0,295.2px)}
+@media(min-width:651px) and (max-width:1200px){.sidebar{width:192px}.main{margin-left:240px;width:calc(100% - 240px)}}
+@media(max-width:650px){.sidebar{width:100%}.main{margin-left:0;width:100%;min-height:calc(100svh - 154px)}.foot{font-size:10px}.stock-search-row{grid-template-columns:minmax(0,1fr)}}
