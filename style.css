@@ -666,3 +666,6 @@ input[type=checkbox]:disabled{opacity:.5;cursor:default}
 .stock-search-row{grid-template-columns:minmax(0,295.2px)}
 @media(min-width:651px) and (max-width:1200px){.sidebar{width:192px}.main{margin-left:240px;width:calc(100% - 240px)}}
 @media(max-width:650px){.sidebar{width:100%}.main{margin-left:0;width:100%;min-height:calc(100svh - 154px)}.foot{font-size:10px}.stock-search-row{grid-template-columns:minmax(0,1fr)}}
+
+/* Checkpoint 14: each material summary immediately below its name. */
+.node-context>.node-head{margin-bottom:4px}.node-context>.use{margin:0}.node-uses{margin-top:12px;padding-left:24px}.node-uses:empty{display:none}
