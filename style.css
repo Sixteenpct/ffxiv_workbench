@@ -532,3 +532,16 @@ body.compact th,body.compact td,.stock-table th,.stock-table td{padding:5px 8px}
 .mother-selection-controls{margin:14px 0 16px;gap:10px}
 .stock-table input.stock-quantity{height:28px;min-height:28px;padding:3px 6px;font-size:13.333px}
 @media(max-width:650px){.stock-table-frame .stock-table tbody tr{padding:10px 11px;gap:5px 9px}.stock-table-frame .stock-table td:nth-child(1) strong{font-size:13.333px}#collection-list table{min-width:600px}}
+
+/* Dense targets, stacked summary, per-column filters and full pagination. */
+.brand-home{color:inherit;text-decoration:none;cursor:pointer}.brand-home:hover{text-decoration:underline}.brand-home:focus-visible{outline:2px solid #77b8d4;outline-offset:3px}
+.target-card #targets .table-scroll{max-height:330px;overflow:auto}.target-card #targets th{position:sticky;top:0;z-index:1}.target-card #targets td{vertical-align:middle;padding:4px 8px}.target-card #targets button{min-height:25px;padding:3px 7px;font-size:12px}.target-job{display:inline-block;margin-left:8px;color:var(--muted);font-size:11px}.target-pager{margin-top:10px}.target-card .search-results{max-height:120px}
+.summary-card{padding:13px 16px}.summary-card h2{font-size:16px;margin-bottom:10px}.summary-card .stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:10px}.summary-card .stat{padding:8px;min-width:0}.summary-card .stat strong{font-size:21px;margin-bottom:3px}.summary-card .stat span{font-size:11px;line-height:1.3;display:block;overflow-wrap:anywhere}.summary-actions{display:block}.summary-actions button{min-height:30px;padding:5px 12px}
+#mother .section-head p{margin-bottom:10px}#mother .section-head>div{width:100%}
+.list-pager{gap:8px;flex-wrap:wrap}.list-pager button{min-height:30px;padding:5px 9px;font-size:12px}.page-jump{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}.page-jump label{display:flex;align-items:center;gap:4px;font-size:12px}.page-jump input[type=number]{width:55px;min-height:28px;padding:4px}.page-jump span{font-size:12px}
+#collection-list th{vertical-align:top}#collection-list th [data-column-label]{display:block;margin-bottom:5px}#collection-list th select,#collection-list th input[type=search]{font-size:12px;width:100%;min-width:65px;max-width:100%;height:29px;padding:4px;margin:0;border-radius:5px}#collection-list th:nth-child(5) input{min-width:130px}#collection-list th:first-child{min-width:86px}#collection-list th:first-child select{min-width:75px}
+@media(max-width:650px){.list-pager{gap:6px}.list-pager .page-jump{flex-basis:100%;order:1}.summary-card .stats{grid-template-columns:repeat(4,minmax(0,1fr))}.summary-card .stat{padding:6px 4px}.summary-card .stat strong{font-size:18px}.summary-card .stat span{font-size:10px}.target-card #targets .table-scroll{max-height:300px}}
+
+/* Keep the breadcrumb row equally tall when the home button is hidden. */
+.topline {min-height:31.98px;}
+@media(max-width:650px){.topline{min-height:55.33px;}}
